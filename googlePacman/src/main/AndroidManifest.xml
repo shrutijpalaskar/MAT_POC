@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+
+      package="jp.or.iidukat.example.pacman"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <!--xmlns:tools and tools:replace need to be added to remove attr appl error @icon value=(@drawable/icon)-->
+
+ 	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    
+    <application android:icon="@drawable/icon"
+                 android:label="@string/app_name"
+                 android:theme="@android:style/Theme.NoTitleBar"
+        tools:replace="android:icon,android:theme"
+        android:name="com.sokrati.sokexmobile.MyApplication">
+        <activity android:name=".GooglePacman"
+                  android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver android:name="com.sokrati.sokexmobile.receivers.GAReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="jp.or.iidukat.example.pacman.SOKLEAD" />
+            </intent-filter>
+        </receiver>
+
+        <!-- <receiver android:name="com.sokrati.sokexmobile.receivers.AppsFlyerReceiver"
+             android:enabled="true"
+             android:exported="true" >
+             <intent-filter>
+                 <action android:name="jp.or.iidukat.example.pacman.SOKLEAD" />
+             </intent-filter>
+         </receiver>
+        <receiver
+             android:name="com.sokrati.sokexmobile.receivers.SokDroidLeadReceiver"
+             android:enabled="true"
+             android:exported="true" >
+             <intent-filter>
+                 <action android:name="jp.or.iidukat.example.pacman.SOKLEAD" />
+             </intent-filter>
+         </receiver>-->
+
+        <!--<receiver android:name="com.appsflyer.MultipleInstallBroadcastReceiver" android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER" />
+            </intent-filter>
+        </receiver>-->
+
+        <service
+            android:name="com.sokrati.sokexmobile.services.PersistParamsService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+        <service
+            android:name="com.sokrati.sokexmobile.services.UploadParamsService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+    </application>
+    <supports-screens android:smallScreens="false"
+                      android:normalScreens="true"
+                      android:largeScreens="false"
+                      android:xlargeScreens="false"
+                      android:anyDensity="false" />
+    <uses-configuration android:reqTouchScreen="finger" />
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="16"/>
+</manifest>

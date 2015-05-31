@@ -1,0 +1,8 @@
+/Users/me/AndroidStudioProjects/GooglePacman_new/googlePacman/build/intermediates/classes/debug
+/Users/me/AndroidStudioProjects/GooglePacman_new/googlePacman/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-02085cc1e79d4b25b1eadb08da2ad8ff64f17745.jar
+/Users/me/AndroidStudioProjects/GooglePacman_new/googlePacman/build/intermediates/pre-dexed/debug/classes-69058254391f9cc300e873444714482470ab4b90.jar
+/Users/me/AndroidStudioProjects/GooglePacman_new/googlePacman/build/intermediates/pre-dexed/debug/AF-Android-SDK-v2.3.1.15-ad07bb3259f414566606fcd38ed36c34d35fd58f.jar
+/Users/me/AndroidStudioProjects/GooglePacman_new/googlePacman/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-0108e6636e0aac758b612a760ba389ac3e9a04bc.jar
+/Users/me/AndroidStudioProjects/GooglePacman_new/googlePacman/build/intermediates/pre-dexed/debug/classes-20d6f0f939f112d870e0556b3be88342655da0a4.jar
+/Users/me/AndroidStudioProjects/GooglePacman_new/googlePacman/build/intermediates/pre-dexed/debug/classes-d4ca3ecdbaa176e0ac6a96cc16446fee835e5753.jar
+/Users/me/AndroidStudioProjects/GooglePacman_new/googlePacman/build/intermediates/pre-dexed/debug/classes-a1d59cb51dd737098e08bfef7176c3d77d99a728.jar
